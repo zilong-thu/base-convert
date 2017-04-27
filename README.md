@@ -1,6 +1,16 @@
 ## 十进制转为二进制C++与JS性能对比
 
-### 测试代码
+### 测试条件&测试用例
+
+代码在一台 Macbook Pro 上面运行。g++ 版本信息如下：
+
+```
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.1.0 (clang-802.0.38)
+Target: x86_64-apple-darwin16.0.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+```
 
 执行100万次对同一个数字的10进制到二进制的转换。这个数字 9007199254740991 （2^53 - 1）是 JavaScript 所能表示的最大数值。
 
